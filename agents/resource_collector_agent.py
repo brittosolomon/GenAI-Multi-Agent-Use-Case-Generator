@@ -2,7 +2,7 @@ def search_kaggle(query):
     return  f"https://www.kaggle.com/search?q={query.replace(' ', '+')}"
 
 def search_huggingface(query):
-    return f"https://huggingface.co/datasets?query={query.replace(' ', '+')}"
+    return f"https://huggingface.co/datasets?search={query.replace(' ', '+')}"
     
 def run_resource_collector(usecase_summary):
     lines = usecase_summary.split("\n")
