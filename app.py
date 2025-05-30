@@ -20,7 +20,7 @@ if st.button("Generate"):
         st.markdown(usecases)
 
     with st.spinner("Finding datasets..."):
-        datasets = run_resource_collector(usecases)
+        datasets = run_resource_collector(f"{industry}\n{usecases}")
         st.subheader("📂 Related Datasets & Projects")
         st.markdown(datasets, unsafe_allow_html=True)
 
